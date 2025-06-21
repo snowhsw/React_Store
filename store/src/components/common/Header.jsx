@@ -1,9 +1,6 @@
 import {HeaderWrap, Btn} from "../../style/CommonStyle"
-import wishNone  from "../../assets/icon/wish.png"
-import cart  from "../../assets/icon/cart_v2.png"
-import search  from "../../assets/icon/search_v2.png"
-
 import { Link } from "react-router-dom"
+
 const Header = () =>{
     return(
         <HeaderWrap>
