@@ -14,3 +14,12 @@ body {
 div{
   box-sizing: border-box;
 }
+p{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+a:visited{
+  color: transparent;
+}

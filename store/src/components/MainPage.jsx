@@ -1,12 +1,9 @@
 import { useContext } from "react"
+import {MainWrap} from "../style/CommonStyle"
+import ProductCard from "./product/ProductCard"
+import { ReducerData } from "../context/RootContext"
 
-import {MainWrap} from "../../style/CommonStyle"
-
-import ProductCard from "../product/ProductCard"
-import { ReducerData } from "../../context/RootContext"
-
-
-const Main = () =>{
+const MainPage = () =>{
     const data = useContext(ReducerData)
     return(
         <MainWrap>
@@ -17,4 +14,4 @@ const Main = () =>{
     )
 }
 
-export default Main;
+export default MainPage;
