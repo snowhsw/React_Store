@@ -2,15 +2,22 @@ import styled from "styled-components";
 
 export const HeaderWrap = styled.header`
     width: 100%;
-    height: 65px;
-    padding: 0 20px;
+`;
 
+export const HeaderTop = styled.div`
+    width: 100%;
+    height: 4rem;
+    padding: 0 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 900;
+    border-bottom: 1px solid #8e8e8e;
+    p{
+        color:rgb(79, 70, 229);
+    }
     > div{
         display: flex;
         align-items: center;
@@ -21,13 +28,39 @@ export const HeaderWrap = styled.header`
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 30px;
-        height: 30px;
+        width: 2rem;
+        height: 2rem;
     }
     img{
         width: 100%;
         height: 100%;
     }
+`;
+
+export const HeaderBot = styled.div`
+    width: 100%;
+    background-color: white;
+    padding: 0.8rem 3rem;
+    border-bottom: 1px solid #8e8e8e;
+    position: relative;
+    >input{
+        width: 100%;
+        height: 40px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: 1px solid grey;
+        &:focus{
+            outline: none;
+        }
+    }
+    > svg{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 60px;
+        color: #8e8e8e;
+    }
+
 `;
 
 

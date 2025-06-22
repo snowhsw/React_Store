@@ -12,10 +12,30 @@ function App() {
     <ProductState>
     <Header />
       <Routes>
-        <Route path="/" element={<MainPage/>}/>
-        <Route path="/wish" element={<WishPage/>}/>
-        <Route path="/detail" element={<DetailPage/>}/>
-        <Route path="/cart" element={<CartPage/>}/>
+        <Route 
+          path="/" 
+          element={
+            <MainPage/>
+          }
+        />
+        <Route 
+          path="/wish" 
+          element={<WishPage/>
+
+          }
+        />
+        <Route 
+          path="/detail" 
+          element={<DetailPage/>
+
+          }
+        />
+        <Route 
+          path="/cart" 
+          element={<CartPage/>
+
+          }
+        />
       </Routes>
       <Footer/>
     </ProductState>
