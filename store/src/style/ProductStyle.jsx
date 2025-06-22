@@ -3,7 +3,10 @@ import styled from "styled-components";
 
 const ProductBox =  styled.div`
     border: 1px solid black;
-    width: calc((100% - (20px * 2)) / 3);
+    background-color: white;
+    width: calc((100% - (1.2rem * 3)) / 4);
+    border-radius: 0.5rem;
+    overflow: hidden;
     img{
         width: 100%;
     }

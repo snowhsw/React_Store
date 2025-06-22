@@ -2,6 +2,11 @@ import styled from "styled-components";
 
 export const HeaderWrap = styled.header`
     width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    /* border-bottom: 1px solid #ccc; */
 `;
 
 export const HeaderTop = styled.div`
@@ -30,6 +35,9 @@ export const HeaderTop = styled.div`
         align-items: center;
         width: 2rem;
         height: 2rem;
+        :active{
+            opacity: 0.7;
+        }
     }
     img{
         width: 100%;
@@ -43,15 +51,15 @@ export const HeaderBot = styled.div`
     padding: 0.8rem 3rem;
     border-bottom: 1px solid #8e8e8e;
     position: relative;
+    display: ${({$isSearch})=>$isSearch?"block":"none"};
     >input{
+        font-size: 1.1rem;
         width: 100%;
         height: 40px;
         box-sizing: border-box;
         border-radius: 10px;
         border: 1px solid grey;
-        &:focus{
-            outline: none;
-        }
+        padding: 0px 50px;
     }
     > svg{
         position: absolute;
@@ -63,18 +71,39 @@ export const HeaderBot = styled.div`
 
 `;
 
-
-export const MainWrap = styled.main`
-    max-width: 1280px;
-    margin: auto;
-    background-color: rgb(249, 250, 251);
+export const NavDiv = styled.nav`
+    width: 100%;
+    margin-bottom: 2.2rem;
+    background-color: white;
+    padding: 0.7rem 1.2rem;
+    box-sizing: border-box;
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    button{
+        padding: 0.6rem 1.2rem;
+        border: 1px solid black;
+        border: 1.2rem;
+        color: #8e8e8e;
+        border-radius: 0.5rem;
+        &:hover{
+            background-color: red;
+            color: white;
+        }
+        &:active{
+            opacity: 0.7;
+        }
+    }
 `;
-
 
 export const Btn = styled.button`
     all: unset;
     cursor: pointer;
+    font-size: 1rem;
+    :active{
+        opacity: 0.7;
+    }
 `;
+
+

@@ -6,7 +6,8 @@ const data = [
         price: 120000,
         rating : 0,
         discount: 0,
-        src:"https://codingapple1.github.io/shop/shoes1.jpg"
+        src:"https://codingapple1.github.io/shop/shoes1.jpg",
+        cate: "shoes"
     },
 
     {
@@ -16,7 +17,8 @@ const data = [
         price: 110000,
         rating : 0,
         discount: 0,
-        src:"https://codingapple1.github.io/shop/shoes2.jpg"
+        src:"https://codingapple1.github.io/shop/shoes2.jpg",
+        cate: "shoes"
     },
 
     {
@@ -26,7 +28,8 @@ const data = [
         price: 130000,
         rating : 0,
         discount: 0,
-        src:"https://codingapple1.github.io/shop/shoes3.jpg"
+        src:"https://codingapple1.github.io/shop/shoes3.jpg",
+        cate: "shoes"
     },
     
     {
@@ -36,7 +39,8 @@ const data = [
         price: 130000,
         rating : 0,
         discount: 0,
-        src:"https://codingapple1.github.io/shop/shoes4.jpg"
+        src:"https://codingapple1.github.io/shop/shoes4.jpg",
+        cate: "shoes"
     },
     
     {
@@ -46,7 +50,8 @@ const data = [
         price: 130000,
         rating : 0,
         discount: 0,
-        src:"https://codingapple1.github.io/shop/shoes5.jpg"
+        src:"https://codingapple1.github.io/shop/shoes5.jpg",
+        cate: "shoes"
     },
     
     {
@@ -56,7 +61,8 @@ const data = [
         price: 130000,
         rating : 0,
         discount: 0,
-        src:"https://codingapple1.github.io/shop/shoes6.jpg"
+        src:"https://codingapple1.github.io/shop/shoes6.jpg",
+        cate: "shoes"
     },
 ]
 
