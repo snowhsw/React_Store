@@ -6,30 +6,24 @@ const DetailPage = () =>{
 
     const data = useContext(ReducerData)
     const { uid } = useParams();
-
+    const prInfo = data.find(d =>{
+        return Number(d.id) === Number(uid)
+    })
 
     console.log(data[0].id)
     console.log("uid "+uid)
-    console.log("결과 " + data[0].id === Number(uid))
-    // console.log(typeof(data[0].id))
-    // console.log(typeof(Number(uid)))
+    console.log("결과 " + (data[0].id === Number(uid)))
+
+    
     return(
         <div>
             <h1>상세 페이지 입니다.</h1>
             <Outlet></Outlet>
-            {/* {
-                [...data].map(d => {
-                    return(
-                        d.id === Number(uid) &&
-                        <div key={d.id}>
-                            <img src={d.src} alt={d.title} />
-                            <p>{d.title}</p>
-                            <p>{d.content}</p>
-                            <p>{d.price}</p>
-                        </div>
-                    )
-                })
-            } */}
+            <p>{prInfo.title}</p>
+            <p>{prInfo.content}</p>
+            <p>{prInfo.price}</p>
+            <img src={prInfo.src} alt={prInfo.title} />
+            
         </div>
     )
 }
