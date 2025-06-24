@@ -4,7 +4,7 @@ import data from "../data/Data";
 
     const reducer = (dataValue, action) =>{
         switch(action.type){
-            case "write":{
+            case "detail":{
                 return dataValue;
             }
             case "delete":{
@@ -16,12 +16,13 @@ import data from "../data/Data";
         }
     }
 
-    const ReducerDispatch = createContext()
-    const ReducerData = createContext()
+    export const ReducerDispatch = createContext()
+    export const ReducerData = createContext()
 
 
-const ProductState = ({children}) =>{
+export const ProductState = ({children}) =>{
 
+    
     const [dataValue, dispatch] = useReducer(reducer, data)
 
     return(
@@ -33,4 +34,3 @@ const ProductState = ({children}) =>{
     )
 }
 
-export  {ProductState, ReducerDispatch,  ReducerData}

@@ -6,27 +6,28 @@ export const HeaderWrap = styled.header`
     top: 0;
     z-index: 1000;
     background-color: white;
-    /* border-bottom: 1px solid #ccc; */
+    padding: 0.5rem 0;
 `;
 
-export const HeaderTop = styled.div`
+export const HeaderInner = styled.div`
     width: 100%;
+    max-width: calc(1280px + 2.4rem);
+    margin: auto;
     height: 4rem;
-    padding: 0 3rem;
+    padding: 0 1.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
     font-size: 2rem;
     font-weight: 900;
-    border-bottom: 1px solid #8e8e8e;
     p{
         color:rgb(79, 70, 229);
     }
     > div{
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 0.5rem;
     }
     > div > a,
     > div > button{
@@ -35,6 +36,7 @@ export const HeaderTop = styled.div`
         align-items: center;
         width: 2rem;
         height: 2rem;
+        color: rgb(79, 70, 229);
         :active{
             opacity: 0.7;
         }
@@ -45,28 +47,29 @@ export const HeaderTop = styled.div`
     }
 `;
 
-export const HeaderBot = styled.div`
-    width: 100%;
+export const SearchBox = styled.div`
+    width: 50%;
     background-color: white;
-    padding: 0.8rem 3rem;
-    border-bottom: 1px solid #8e8e8e;
     position: relative;
     display: ${({$isSearch})=>$isSearch?"block":"none"};
     >input{
-        font-size: 1.1rem;
+        font-size: 1rem;
         width: 100%;
         height: 40px;
         box-sizing: border-box;
         border-radius: 10px;
-        border: 1px solid grey;
-        padding: 0px 50px;
+        border: 2px solid rgb(79, 70, 229);;
+        padding: 0px 3rem 0px 3rem;
+    }
+    >input:focus{
+        outline: none;
     }
     > svg{
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        left: 60px;
-        color: #8e8e8e;
+        left: 1rem;
+        color: rgb(79, 70, 229);;
     }
 
 `;

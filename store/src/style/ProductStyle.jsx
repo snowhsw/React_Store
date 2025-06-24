@@ -10,6 +10,12 @@ const ProductBox =  styled.div`
     img{
         width: 100%;
     }
+    > a{
+        color:black
+    }
+    > a:visited{
+        color:transparent
+    }
 `;
 
 
