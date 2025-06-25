@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const MainWrap = styled.main`
     width: 100%;
-    background-color: rgb(249, 250, 251);
+    background-color: rgb(229, 229, 229);
 `;
 
 export const MainBanner = styled.div`
@@ -13,9 +13,10 @@ export const MainBanner = styled.div`
 
 
 export const Contianer = styled.div`
-    max-width: 1400px;
+    max-width: 1280px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 1.2rem;
 `;
+

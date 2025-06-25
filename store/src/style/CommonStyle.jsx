@@ -51,9 +51,8 @@ export const SearchBox = styled.div`
     width: 50%;
     background-color: white;
     position: relative;
-    display: ${({$isSearch})=>$isSearch?"block":"none"};
     >input{
-        font-size: 1rem;
+        font-size: 1.1rem;
         width: 100%;
         height: 40px;
         box-sizing: border-box;

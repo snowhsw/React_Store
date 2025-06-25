@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { ProductBox } from "../../style/ProductStyle"
+import { ProductBox, AddCartBtn } from "../../style/ProductStyle"
 import { useContext } from "react"
 
 
@@ -10,10 +10,23 @@ const ProductCard = ({info}) => {
     return (
         <ProductBox>
             <Link to={`/detail/${info.id}`}>
-                <p>{info.title}</p>
-                <p>{info.content}</p>
-                <p>{info.price}</p>
-                <img src={info.src} alt={info.title} />
+                <div className="imgBox">
+                    <img src={info.src} alt={info.title} />
+                </div>
+                <div className="prInfoBox">
+                    <p className="pr_title">{info.title}</p>
+                    <p className="pr_content">{info.content}</p>
+                    <p className="pr_price">{info.price}</p>
+                    <AddCartBtn
+                        onClick={(e)=>{
+                            e.preventDefault()
+                            e.stopPropagation();
+                            console.log(111)
+                        }}
+                    >
+                        장바구니 담기
+                    </AddCartBtn>
+                </div>
             </Link>
         </ProductBox>
     )
