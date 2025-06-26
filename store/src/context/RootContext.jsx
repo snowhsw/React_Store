@@ -4,6 +4,12 @@ import data from "../data/Data";
 
     const reducer = (dataValue, action) =>{
         switch(action.type){
+            case "addPr" :{
+                return(
+                    
+                    [...dataValue, ...action.addData]
+                )
+            }
             case "detail":{
                 return dataValue;
             }

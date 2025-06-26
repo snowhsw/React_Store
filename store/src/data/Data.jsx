@@ -1,6 +1,6 @@
 const data = [
     {
-        id:  1,
+        id:  51,
         title: "White and Black",
         content: "Born in France",
         price: 120000,
@@ -11,7 +11,7 @@ const data = [
     },
 
     {
-        id:  2,
+        id:  52,
         title: "Red Knit",
         content: "Born in Seoul",
         price: 130000,
@@ -22,7 +22,7 @@ const data = [
     },
 
     {
-        id:  3,
+        id:  53,
         title: "Grey Yordan",
         content: "Born in the States",
         price: 140000,
@@ -33,7 +33,7 @@ const data = [
     },
     
     {
-        id:  4,
+        id:  54,
         title: "Grey Yordan",
         content: "Born in the States",
         price: 150000,
@@ -44,7 +44,7 @@ const data = [
     },
     
     {
-        id:  5,
+        id:  55,
         title: "Grey Yordan",
         content: "Born in the States",
         price: 160000,
@@ -55,7 +55,7 @@ const data = [
     },
     
     {
-        id:  6,
+        id:  56,
         title: "Grey Yordan",
         content: "Born in the States",
         price: 170000,
@@ -65,7 +65,7 @@ const data = [
         cate: "shoes"
     },
     {
-        id:  7,
+        id:  57,
         title: "White and Black",
         content: "Born in France",
         price: 120000,
@@ -76,7 +76,7 @@ const data = [
     },
 
     {
-        id: 8,
+        id: 58,
         title: "Red Knit",
         content: "Born in Seoul",
         price: 130000,
@@ -87,7 +87,7 @@ const data = [
     },
 
     {
-        id: 9,
+        id: 59,
         title: "Grey Yordan",
         content: "Born in the States",
         price: 140000,
@@ -98,7 +98,7 @@ const data = [
     },
     
     {
-        id: 10,
+        id: 150,
         title: "Grey Yordan",
         content: "Born in the States",
         price: 150000,
@@ -109,7 +109,7 @@ const data = [
     },
     
     {
-        id: 11,
+        id: 151,
         title: "Grey Yordan",
         content: "Born in the States",
         price: 160000,
@@ -120,7 +120,7 @@ const data = [
     },
     
     {
-        id: 12,
+        id: 152,
         title: "Grey Yordan",
         content: "Born in the States",
         price: 170000,
