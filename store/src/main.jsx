@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from "react-router-dom"
@@ -16,22 +15,3 @@ createRoot(document.getElementById('root')).render(
     </StrictMode >
   </Provider>
 )
-=======
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import { BrowserRouter } from "react-router-dom"
-import './index.css'
-import App from './App.jsx'
-import { Provider } from 'react-redux'
-import store from './store.js'
-createRoot(document.getElementById('root')).render(
-
-  <Provider store={store}>
-    <StrictMode>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </StrictMode >
-  </Provider>
-)
->>>>>>> 4654f11ee7575df2e3f0c7424b2e6424d1bbf5d0
