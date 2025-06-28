@@ -11,8 +11,7 @@ const DetailPage = () =>{
         return Number(d.id) === Number(uid)
     })
 
-    // console.log(data[0].id)
-    // console.log("uid "+uid)
+   
     console.log("결과 " + (data[0].id === Number(uid)))
 
     
