@@ -1,14 +1,24 @@
-import { configureStore, createSlice } from "@reduxjs/toolkit";
-import data from "./data/Data";
+import { configureStore, createSlice } from "@reduxjs/toolkit"
+import data from "./data/Data"
 
-let testData = createSlice({
+
+const tData = createSlice({
     name: "data",
-    initialState: data
+    initialState : data,
+    reducers:{
+        editState(state, addState){
+            return [...state, addState]
+        }
+    }
 })
+
+export const {editState} = tData.actions
 
 const store = configureStore({
     reducer:{
-        tData : testData.reducer
+        tData: tData.reducer
     }
 })
+
+
 export default store
